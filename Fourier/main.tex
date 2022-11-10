@@ -97,7 +97,7 @@
 	\def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
    
 \title{ Digital Signal Processing \\ \Large EE3900 \\ \vspace*{12pt} \textbf{Fourier Series}}
-\author{I Sai Pradeep\\ \normalsize AI21BTECH11013 \\ \vspace*{20pt} \normalsize \today}
+\author{M Avinash\\ \normalsize AI21BTECH11018 \\ \vspace*{20pt} \normalsize \today}
  \maketitle 
  \tableofcontents
  \begin{abstract}
@@ -114,13 +114,13 @@
     \item Plot $x(t)$.\\
     \solution 
     \begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/1.1.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/1.1.py
     \end{lstlisting}
     \begin{figure}[!ht]
 			\centering
 			\includegraphics[width=\columnwidth]{./figs/1.1.png}
-			\caption{}
-			%\label{fig:ckt}
+			\caption*{Fig 1.1}
+			\label{fig:ckt}
 \end{figure}
     \item Show that $x(t)$ is periodic and find its period.
     \solution 
@@ -251,13 +251,13 @@ when $t \in \bigg( 0,\frac{1}{2f_0}\bigg)$, $x(t)=A_0 \sin\brak{2 \pi f_0t}$\\
         using python.\\
         \solution 
         \begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/2.3.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/2.3.py
         python3 2.3.py
         \end{lstlisting}
           \begin{figure}[!ht]
 			\centering
 			\includegraphics[width=\columnwidth]{./figs/2.3.png}
-			\caption{}
+			\caption*{Fig 2.3}
 			%\label{fig:ckt}
 \end{figure}
          \item Show that 
@@ -331,13 +331,13 @@ b_k&=j\brak{c_k-c_{-k}}=0
     using python.\\
      \solution 
         \begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/2.6.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/2.6.py
         python3 2.3.py
         \end{lstlisting}
           \begin{figure}[!ht]
 			\centering
 			\includegraphics[width=\columnwidth]{./figs/2.6.png}
-			\caption{}
+			\caption*{Fig 2.6}
 			%\label{fig:ckt}
 \end{figure}
     \end{enumerate}
@@ -506,13 +506,13 @@ Hence,
 	\end{align} 
 	\begin{figure}[!ht]
 				\includegraphics[width=\columnwidth]{figs/3.8.png}
-				\caption{Fourier Transform of $x(t)$.}
+				\caption*{Fourier Transform of $x(t)$.}
 				\label{fig:fourier-xt}
 			\end{figure}
 	Fourier transform of $x(t)$ is verified in the following figure. 
 	The figure is plotted using the below python code.
 	\begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/3.8.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/3.8.py
 	\end{lstlisting} 
 %	
 	\item Show that
@@ -539,12 +539,12 @@ Applying fourier transform we get,
 	\end{align}
 	\begin{figure}[!ht]
 	\includegraphics[width=\columnwidth]{figs/3.9.png}
-	\caption{Fourier Transform of $\rect{t})$.}
+	\caption*{Fourier Transform of $\rect{(t)}$.}
 	\label{fig:3.9}
 \end{figure}
-The below python code plots the figure \ref{fig:3.9}
+The below python code plots the figure
 	\begin{lstlisting}
-	wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/3.9.py
+	wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/3.9.py
 \end{lstlisting} 
 
 	\item $\sinc{t}\system{F} ?$  Verify using python.\\
@@ -556,20 +556,20 @@ The below python code plots the figure \ref{fig:3.9}
 	\end{align}
 \begin{figure}[!ht]
 	\includegraphics[width=\columnwidth]{figs/3.10.png}
-	\caption{Fourier Transform of $\rect{t})$.}
+	\caption*{Fourier Transform of $\rect({t})$.}
 	\label{fig:3.10}
 \end{figure}
 	Since $\rect{f}$ is an even function.
-	The below python code plots the figure \ref{fig:3.10}
+	The below python code plots the figure
 	\begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/3.10.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/3.10.py
 	\end{lstlisting} 
 
 %	The python code \texttt{codes/3\_10.py} verifies \eqref{eq:fourier-sinc}
 %	by plotting Fig. \ref{fig:fourier-sinc}.
 %	\begin{figure}[!ht]
 %		\includegraphics[width=\columnwidth]{figs/3_10.png}
-%		\caption{Fourier Transform of $\sinc(t)$.}
+%		\caption*{Fourier Transform of $\sinc(t)$.}
 %		\label{fig:fourier-sinc}
 %	\end{figure}
 \end{enumerate}
@@ -635,14 +635,15 @@ V_0 \delta\brak{t} \system{F}^{-1} V_0\times 1	\\
 Hence verified.
 	\begin{figure}[!ht]
 			\includegraphics[width=\columnwidth]{figs/4.3.png}
-			\caption{Convolution of the $x(t)$ and $h(t)$.}
+			\caption*{Convolution of the $x(t)$ and $h(t)$.}
 			\label{eq:fig:4.3}
 		\end{figure}
-The following python code plots the figure \ref{fig:4.3}
+The following python code plots the figure
 \begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/4.3.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/4.3.py
 \end{lstlisting} 
 \end{enumerate}
+\pagebreak
 \section{Filter Design}
 \begin{enumerate}[label=\thesection.\arabic*
 	,ref=\thesection.\theenumi]
@@ -691,7 +692,7 @@ wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/c
 		f_{c2} = f_s\sbrak{10^{-\frac{A_s}{10}} - 1}^{-\frac{1}{2n}} = \SI[parse-numbers=false]{63.16}{\hertz}
 	\end{align}
 	Hence, we take $f_c = \sqrt{f_{c1}f_{c2}} = \SI[parse-numbers=false]{60}{\hertz}$ approximately.
-	\item Design a Chebyshev filter for $H(f)$.bjjk,bv,kgg
+	\item Design a Chebyshev filter for $H(f)$.
 	\solution The Chebyshev filter has an amplitude response
 	given by
 	\begin{align}
@@ -762,7 +763,7 @@ wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/c
 		L_2' = L_4' = \SI{4.29}{\milli\henry} \\
 		C_3' = \SI{5.31}{\milli\farad}
 	\end{align}
-	The L-C network is shown in Fig. \ref{fig:butter-filter}.
+	The L-C network is shown in Fig.
 	\begin{figure}[!ht]
 		\centering
 		\begin{circuitikz} 
@@ -772,18 +773,18 @@ wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/c
 			\draw (3.5,0) to[C, l=5.31 mF] (3.5,2);
 			\draw (6,0) to[C, l=1.64 mF] (6,2);
 		\end{circuitikz}
-		\caption{L-C Butterworth Filter}
+		\caption*{L-C Butterworth Filter}
 		\label{fig:butter-filter}
 	\end{figure}
 	
 	\begin{figure}
 		\includegraphics[width=\columnwidth]{figs/5.3.png}
-		\caption{Simulation of Chebyshev filter.}
+		\caption*{Simulation of Chebyshev filter.}
 		\label{fig:sim-butter}
 	\end{figure}
-	Below python code plot the figure \ref{fig:sim-butter}
+	Below python code plots the figure
 	\begin{lstlisting}
-wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/charger/codes/5.3.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/5.3.py
 	\end{lstlisting} 
 
 	\item Design a circuit for your Chebyshev filter.
@@ -797,7 +798,7 @@ wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/c
 		C_3' = \SI{6.28}{\milli\farad} \\
 		L_4' = \SI{2.23}{\milli\henry}
 	\end{align}
-	The L-C network is shown in Fig. \ref{fig:cheby-filter}.
+	The L-C network is shown in Fig.
 	\begin{figure}[!ht]
 		\centering
 		\begin{circuitikz} 
@@ -806,17 +807,17 @@ wget https://github.com/Pradeep8802/EE3900-Digital-Signal-Processing/blob/main/c
 			\draw (3.5,0) to[C, l=6.28 mF] (3.5,2);
 			\draw (0,2) to [short, o-] (1,2) to [L, l=3.16 mH] (3.5,2) to[L, l=2.23 mH] (6,2) to[short, -o] (7,2);
 		\end{circuitikz}
-		\caption{L-C Chebyshev Filter}
+		\caption*{L-C Chebyshev Filter}
 		\label{fig:cheby-filter}
 	\end{figure}
 	\begin{figure}
 	\includegraphics[width=\columnwidth]{figs/5.4.png}
-	\caption{Simulation of Chebyshev filter.}
+	\caption*{Simulation of Chebyshev filter.}
 	\label{fig:sim-cheby}
 \end{figure}
-	Below python code plot the figure \ref{fig:sim-cheby}
+	Below python code plots the figure 
 	\begin{lstlisting}
-wget /codes/5.4.py
+wget https://github.com/AvinashNayak27/fourier/blob/master/Fourier/codes/5.4.py
 	\end{lstlisting} 
 \end{enumerate}
 
